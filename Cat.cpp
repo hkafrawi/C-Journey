@@ -5,7 +5,21 @@
 using namespace std;
 
 void Cat::speak() {
-    cout << "Meowwww!!!" << endl;
+    if(happy){
+        cout << "Meowwww!!!" << endl;
+    }
+    else{
+        cout << "Ssssss!!!" << endl;
+    }
+    
+}
+
+void Cat::makeHappy() {
+    happy = true;
+}
+
+void Cat::makeSad() {
+    happy = false;
 }
 
 void Cat::jump() {

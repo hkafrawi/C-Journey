@@ -6,7 +6,11 @@ int main() {
     
     Cat cat1;
 
+    cat1.makeHappy();
     cat1.speak();
-    cat1.jump();
+
+    Cat cat2;
+    cat2.makeSad();
+    cat2.speak();
     return 0;
 }
