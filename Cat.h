@@ -3,13 +3,15 @@
 
  class Cat{
  private:
-    bool happy = true;
+    bool happy;
 
  public:
     void makeHappy();
     void makeSad();
     void speak();
     void jump();
+    Cat();
+    ~Cat();
  };
 
 
