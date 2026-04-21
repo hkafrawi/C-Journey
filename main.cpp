@@ -11,11 +11,11 @@ int main() {
         //cout << cat1.getAge() << endl;
     } // cat1 only live here
 
-    Cat cat2;
-    cat2.SetName("Misho");
+    Cat cat2("Misho");
+    //cat2.SetName("Misho");
     cat2.makeSad();
     cat2.speak();
-    cout << cat2.toString() << endl;
+    //cout << cat2.toString() << endl;
 
     return 0;
 }

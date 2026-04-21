@@ -20,6 +20,7 @@
     int getAge();
     void SetName(string new_name);
     Cat();
+    Cat(string new_name) { name = new_name; age = 0; };
     ~Cat();
  };
 
