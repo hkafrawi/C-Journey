@@ -15,12 +15,12 @@
     void makeSad();
     void speak();
     void jump();
-    string toString();
+    void toString();
     string getName();
     int getAge();
     void SetName(string new_name);
     Cat();
-    Cat(string new_name) { name = new_name; age = 0; };
+    Cat(string name, int age, bool happy);
     ~Cat();
  };
 

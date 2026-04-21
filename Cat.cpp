@@ -5,11 +5,27 @@
 
 using namespace std;
 
+
 Cat::Cat(){
-    stringstream ss;
-    name = "Lilly";
-    happy = true;
+    name = "";
     age = 0;
+    happy = true;
+}
+
+Cat::Cat(string name, int age, bool happy){
+    this->name = name;
+    this->happy = happy;
+    this->age = age;   
+    
+    cout<<"Memory location of object: " << this << endl;
+}
+
+Cat::~Cat(){
+    cout << "Cat destroyed..." << endl;
+}
+
+void Cat::toString() {
+    stringstream ss;
     cout << "Cat created.." << endl;
     ss << "Name:";
     ss << name;
@@ -17,17 +33,7 @@ Cat::Cat(){
     ss << age;
     ss << "; Happy: ";
     ss << happy;
-    cout << ss.str() << endl;
-    //cout << "Cat created..." << endl;
-    
-}
-
-Cat::~Cat(){
-    cout << "Cat destroyed..." << endl;
-}
-
-string Cat::toString() {
-    return name;
+    cout<<ss.str()<<endl;
 }
 
 string Cat::getName() {
