@@ -6,11 +6,24 @@ using namespace std;
 
 Cat::Cat(){
     cout << "Cat created..." << endl;
+    name = "Lilly";
     happy = true;
 }
 
 Cat::~Cat(){
     cout << "Cat destroyed..." << endl;
+}
+
+string Cat::toString() {
+    return name;
+}
+
+string Cat::getName() {
+    return name;
+}
+
+void Cat::SetName(string new_name) {
+    name = new_name;
 }
 
 void Cat::speak() {
