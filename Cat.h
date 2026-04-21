@@ -8,6 +8,7 @@
  private:
     bool happy;
     string name;
+    int age;
 
  public:
     void makeHappy();
@@ -16,6 +17,7 @@
     void jump();
     string toString();
     string getName();
+    int getAge();
     void SetName(string new_name);
     Cat();
     ~Cat();

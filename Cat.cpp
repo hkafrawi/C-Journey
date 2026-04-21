@@ -1,13 +1,25 @@
 #include <iostream>
+#include <sstream>
 
 #include "Cat.h"
 
 using namespace std;
 
 Cat::Cat(){
-    cout << "Cat created..." << endl;
+    stringstream ss;
     name = "Lilly";
     happy = true;
+    age = 0;
+    cout << "Cat created.." << endl;
+    ss << "Name:";
+    ss << name;
+    ss << "; Age: ";
+    ss << age;
+    ss << "; Happy: ";
+    ss << happy;
+    cout << ss.str() << endl;
+    //cout << "Cat created..." << endl;
+    
 }
 
 Cat::~Cat(){
@@ -20,6 +32,10 @@ string Cat::toString() {
 
 string Cat::getName() {
     return name;
+}
+
+int Cat::getAge() {
+    return age;
 }
 
 void Cat::SetName(string new_name) {
